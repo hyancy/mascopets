@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_app"
+    android:gravity="center_horizontal"
+    tools:context=".ui.MainActivity">
+    <TextView
+        android:id="@+id/title_show_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Masco-PETS\nApp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="38dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/mascotas"
+        android:layout_marginTop="90dp"
+        android:adjustViewBounds="true"/>
+
+    <Button
+        android:id="@+id/btn_registrar_mascotas"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#192D9D"
+        android:text="@string/registrar_mascota"
+        android:textSize="28sp"
+        app:cornerRadius="16dp"
+        />
+
+    <Button
+        android:id="@+id/btn_mostrar_mascotas"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#192D9D"
+        android:text="@string/consultar_mascotas"
+        android:textSize="28sp"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_edad" />
+
+    <Button
+        android:id="@+id/btn_eliminar_data"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#192D9D"
+        android:text="@string/eliminar_mascota_por_id"
+        android:textSize="28sp"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_edad" />
+
+    <Button
+        android:id="@+id/btn_cerrar_sesion"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#192D9D"
+        android:text="@string/btn_cerrar_sesion"
+        android:textSize="28sp"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_edad" />
+
+</LinearLayout>

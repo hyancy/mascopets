@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Masco-PETS\nApp</string>
+    <string name="registrar_mascotas">Registrar Mascotas</string>
+    <string name="introduzca_id_mascota">Introduzca ID de la mascota</string>
+    <string name="nombre">Nombre:</string>
+    <string name="introduzca_raza_mascota">Introduzca raza de la mascota</string>
+    <string name="ingrese_nombre_de_la_mascota">Ingrese nombre de la mascota</string>
+    <string name="raza">Raza:</string>
+    <string name="edad">Edad:</string>
+    <string name="introduzca_edad_mascota">Introduzca edad de mascota</string>
+    <string name="registrar_mascota">Registrar Mascota</string>
+    <string name="id">ID:</string>
+    <string name="consultar_mascotas">Consultar Mascotas</string>
+    <string name="consultar_mascota_por_id">Consultar Mascota por Id</string>
+    <string name="eliminar_mascota_por_id">Eliminar data</string>
+    <string name="btn_cerrar_sesion">Cerrar sesión</string>
+    <string name="registrar_usuario">Registrar Usuario</string>
+    <string name="btn_iniciar_sesion">Iniciar Sesión</string>
+    <string name="btn_salir_de_app">Cerrar App</string>
+    <string name="bnt_registrar_usuario_register">Crear Usuario</string>
+    <string name="bnt_iniciar_sesion_login">Iniciar Sesión</string>
+</resources>

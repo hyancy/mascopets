@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_mascota"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/background_card"
+    app:cardCornerRadius="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_view_mascotas"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mascotas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_nombre_mascota_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image_view_mascotas"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Nombre Mascota" />
+
+        <View
+            android:id="@+id/view_divider_card"
+            android:layout_width="230dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image_view_mascotas"
+            app:layout_constraintTop_toBottomOf="@id/tv_nombre_mascota_card"
+            tools:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_label_id_mascota_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Id: "
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/tv_label_raza_mascota_card"
+            app:layout_constraintStart_toEndOf="@id/image_view_mascotas"
+            app:layout_constraintTop_toBottomOf="@id/view_divider_card" />
+
+        <TextView
+            android:id="@+id/tv_id_mascota_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/tv_raza_mascota_card"
+            app:layout_constraintStart_toEndOf="@id/tv_label_id_mascota_card"
+            app:layout_constraintTop_toBottomOf="@id/view_divider_card"
+            tools:text="Id" />
+
+        <TextView
+            android:id="@+id/tv_label_raza_mascota_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Raza: "
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@id/tv_label_edad_mascota_card"
+            app:layout_constraintStart_toEndOf="@id/image_view_mascotas"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_id_mascota_card" />
+
+        <TextView
+            android:id="@+id/tv_raza_mascota_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            tools:text="Raza"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@id/tv_edad_mascota_card"
+            app:layout_constraintStart_toEndOf="@id/tv_label_raza_mascota_card"
+            app:layout_constraintTop_toBottomOf="@id/tv_id_mascota_card" />
+
+        <TextView
+            android:id="@+id/tv_label_edad_mascota_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Edad: "
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintStart_toEndOf="@id/image_view_mascotas"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_raza_mascota_card" />
+
+        <TextView
+            android:id="@+id/tv_edad_mascota_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            tools:text="Edad"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintStart_toEndOf="@id/tv_label_edad_mascota_card"
+            app:layout_constraintTop_toBottomOf="@id/tv_raza_mascota_card" />
+
+        <TextView
+            android:id="@+id/tv_usuario_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:text="hyancy"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

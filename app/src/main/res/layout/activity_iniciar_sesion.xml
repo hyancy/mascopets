@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_app"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    tools:context=".ui.IniciarSesion">
+
+ <TextView
+     android:id="@+id/title_show_register"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:padding="10dp"
+     android:text="Masco-PETS\nApp"
+     android:textAlignment="center"
+     android:textColor="@color/white"
+     android:textSize="38dp" />
+
+ <ImageView
+     android:layout_width="wrap_content"
+     android:layout_height="100dp"
+     android:layout_marginTop="80dp"
+     android:adjustViewBounds="true"
+     android:src="@drawable/mascotas" />
+
+ <com.google.android.material.textfield.TextInputLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="20dp"
+     android:layout_marginBottom="10dp">
+
+  <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/edt_user_usuario_login"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:hint="Usuario"
+      android:inputType="text"
+      android:textColor="@color/white"
+      android:textColorHint="@color/white"
+      android:textSize="18sp"
+      tools:text="Usuario" />
+ </com.google.android.material.textfield.TextInputLayout>
+
+ <com.google.android.material.textfield.TextInputLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginBottom="10dp">
+
+  <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/edt_contraseña_login"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:hint="Contraseña"
+      android:inputType="textPassword"
+      android:textColor="@color/white"
+      android:textColorHint="@color/white"
+      android:textSize="18sp"
+      tools:text="Contraseña" />
+ </com.google.android.material.textfield.TextInputLayout>
+
+ <Button
+     android:id="@+id/btn_iniciar_sesion_login"
+     android:layout_width="320dp"
+     android:layout_height="60dp"
+     android:layout_marginTop="40dp"
+     android:backgroundTint="@color/background_button_primary"
+     android:text="@string/bnt_iniciar_sesion_login"
+     android:textSize="24sp"
+     app:cornerRadius="16dp" />
+
+ <TextView
+     android:id="@+id/tv_registrar_usuario_login"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="10dp"
+     android:textColor="@color/white"
+     android:clickable="true"
+     android:text="¿No tienes cuenta?. Registrate."
+     android:textSize="18sp"/>
+</LinearLayout>

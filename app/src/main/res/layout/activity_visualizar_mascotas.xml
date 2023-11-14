@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_app"
+    tools:context=".ui.VisualizarMascotas">
+
+
+    <TextView
+        android:id="@+id/title_show_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#052737"
+        android:padding="10dp"
+        android:text="Lista de Mascotas"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="38dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_no_hay_mascotas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#052737"
+        android:padding="10dp"
+        android:text="No se encontraron mascotas registradas"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_show_register" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_mascotas"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:background="@color/background_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_show_register">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/but_mostrar_mascota"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#E6126E"
+        android:text="Consultar Mascota"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recycler_view_mascotas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
